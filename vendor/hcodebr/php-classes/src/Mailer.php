@@ -6,8 +6,8 @@ use Rain\Tpl;
 
 class Mailer {
 
-    const USERNAME = "";
-	const PASSWORD = "";
+    const USERNAME = "dbb1bc9c61c261";
+	const PASSWORD = "ffbe72c63bb18b";
 	const NAME_FROM = "De.v";
 
 	private $mail;
@@ -46,13 +46,13 @@ class Mailer {
 		$this->mail->Debugoutput = 'html';
 
 		//Set the hostname of the mail server
-		$this->mail->Host = 'smtp.gmail.com';
+		$this->mail->Host = 'sandbox.smtp.mailtrap.io';
 		// use
 		// $this->mail->Host = gethostbyname('smtp.gmail.com');
 		// if your network does not support SMTP over IPv6
 
 		//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-		$this->mail->Port = 587;
+		$this->mail->Port = 2525;
 
         $this->mail->isSMTP();
 			$this->mail->SMTPOptions = array(
